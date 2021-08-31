@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ASP.NET_CRUD.Models;
 
 namespace ASP.NET_CRUD.Data
 {
@@ -12,5 +13,6 @@ namespace ASP.NET_CRUD.Data
             : base(options)
         {
         }
+        public DbSet<ASP.NET_CRUD.Models.Item> Item { get; set; }
     }
 }
